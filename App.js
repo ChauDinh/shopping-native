@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, ScrollView, FlatList } from "react-native";
+import { StyleSheet, View, FlatList } from "react-native";
 
 import CategoryItem from "./components/CategoryItem";
 import ScienceImage from "./assets/electron.png";
