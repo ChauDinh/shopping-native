@@ -1,22 +1,19 @@
 import React from "react";
 import { Image, Text, View, StyleSheet } from "react-native";
 
-import Science from "../assets/electron.png";
-
-export default function Categories() {
+export default function Categories(props) {
+  const { category } = props;
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Science</Text>
-      <Image source={Science} style={styles.categoryImage}></Image>
+      <Text style={styles.title}>{category.name}</Text>
+      <Image source={category.img} style={styles.categoryImage}></Image>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
     alignItems: "center",
-    justifyContent: "center",
     padding: 16,
     borderRadius: 5,
     backgroundColor: "#fff",
