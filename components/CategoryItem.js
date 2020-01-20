@@ -1,20 +1,10 @@
 import React from "react";
-import {
-  Image,
-  Text,
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  Alert
-} from "react-native";
+import { Image, Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function Categories(props) {
-  const { category } = props;
+  const { category, onPress } = props;
   return (
-    <TouchableOpacity
-      activeOpacity={0.5}
-      onPress={() => Alert.alert(`Welcom to ${category.name}`)}
-    >
+    <TouchableOpacity activeOpacity={0.5} onPress={onPress}>
       <View style={styles.container}>
         <Text style={styles.title}>{category.name}</Text>
         <Image source={category.img} style={styles.categoryImage}></Image>
