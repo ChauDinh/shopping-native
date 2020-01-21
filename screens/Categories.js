@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View, FlatList } from "react-native";
+import axios from "axios";
 
 import CategoryItem from "../components/CategoryItem";
 import ScienceImage from "../assets/electron.png";
@@ -16,16 +17,21 @@ export default class Categories extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      categories: [
-        { id: 1, name: "Science", img: ScienceImage },
-        { id: 2, name: "Business", img: BusinessImage },
-        { id: 3, name: "Literature", img: LiteratureImage },
-        { id: 4, name: "Programming", img: ProgrammingImage },
-        { id: 5, name: "Design", img: DesignImage },
-        { id: 6, name: "Finance", img: FinanceImage }
-      ]
+      categories: []
     };
   }
+
+  componentDidMount() {
+    axios
+      .get("https://9aac7e23.ngrok.io/categories")
+      .then(result =>
+        this.setState({
+          categories: result.data
+        })
+      )
+      .catch(error => console.error(error));
+  }
+
   render() {
     const { navigation } = this.props;
     const { categories } = this.state;
@@ -36,6 +42,7 @@ export default class Categories extends React.Component {
           renderItem={({ item }) => (
             <CategoryItem
               category={item}
+              img={ScienceImage}
               onPress={() =>
                 navigation.navigate("Category", {
                   name: item.name

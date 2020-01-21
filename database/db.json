@@ -1,0 +1,142 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Science",
+      "img": "https://res.cloudinary.com/dnlthcx1a/image/upload/v1579626550/react-native-demo/electron_ugdgey.png"
+    },
+    {
+      "id": 2,
+      "name": "Business",
+      "img": "https://res.cloudinary.com/dnlthcx1a/image/upload/v1579626550/react-native-demo/graphic_ckbnqa.png"
+    },
+    {
+      "id": 3,
+      "name": "Literature",
+      "img": "https://res.cloudinary.com/dnlthcx1a/image/upload/v1579626551/react-native-demo/study_ac0lcs.png"
+    },
+    {
+      "id": 4,
+      "name": "Programming",
+      "img": "https://res.cloudinary.com/dnlthcx1a/image/upload/v1579626550/react-native-demo/data_rtknpu.png"
+    },
+    {
+      "id": 5,
+      "name": "Design",
+      "img": "https://res.cloudinary.com/dnlthcx1a/image/upload/v1579626550/react-native-demo/idea_r9fggp.png"
+    },
+    {
+      "id": 6,
+      "name": "Finance",
+      "img": "https://res.cloudinary.com/dnlthcx1a/image/upload/v1579626551/react-native-demo/payment_bl4f0i.png"
+    }
+  ],
+  "science": [
+    {
+      "id": 1,
+      "name": "Probability and Computing",
+      "isbn": "9781107154889",
+      "img": "http://books.google.com/books/content?id=E9UlDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "id": 2,
+      "name": "Bayesian Statistics the Fun Way",
+      "isbn": "1593279566",
+      "img": "http://books.google.com/books/content?id=bhrCugEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "id": 3,
+      "name": "Concepts, Techniques, and Models of Computer Programming",
+      "isbn": "0262220695",
+      "img": "http://books.google.com/books/content?id=_bmyEnUnfTsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "id": 4,
+      "name": "Structure and Interpretation of Computer Programs",
+      "isbn": "0262510871",
+      "img": "http://books.google.com/books/content?id=6QOXQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  ],
+  "business": [
+    {
+      "id": 5,
+      "name": "Mind Your Business",
+      "isbn": "1944515720",
+      "img": "http://books.google.com/books/content?id=B6eWtgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "id": 6,
+      "name": "The Personal MBA",
+      "isbn": "1591845572",
+      "img": "http://books.google.com/books/content?id=NzUMuAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "id": 7,
+      "name": "The Power of Habit",
+      "isbn": "081298160X",
+      "img": "http://books.google.com/books/content?id=RtWDngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  ],
+  "literature": [
+    {
+      "id": 8,
+      "name": "How to Read Literature Like a Professor Revised Edition",
+      "isbn": "9780062301673",
+      "img": "http://books.google.com/books/content?id=nSA3ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "id": 9,
+      "name": "The Norton Anthology of English Literature",
+      "isbn": "0393603121",
+      "img": "http://books.google.com/books/content?id=xWSbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+  ],
+  "programming": [
+    {
+      "id": 10,
+      "name": "JavaScript and JQuery",
+      "isbn": "9781118531648",
+      "img": "http://books.google.com/books/content?id=LpctBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+      "id": 11,
+      "name": "Building Web Apps with WordPress",
+      "isbn": "1491990082",
+      "img": "http://books.google.com/books/content?id=DzoitAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "id": 12,
+      "name": "Web Development and Design Foundations with HTML5",
+      "isbn": "0134801148",
+      "img": "http://books.google.com/books/content?id=ut5NswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "id": 13,
+      "name": "Fundamentals of Web Development",
+      "isbn": "0134481267",
+      "img": "http://books.google.com/books/content?id=B2cMvgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+      "id": 14,
+      "name": "Web Development with Node and Express",
+      "isbn": "1491949309",
+      "img": "http://books.google.com/books/content?id=dLd0oAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  ],
+  "design": [
+    {
+      "id": 15,
+      "name": "The Design of Everyday Things",
+      "isbn": "9780465050659",
+      "img": "http://books.google.com/books/content?id=qBfRDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  ],
+  "finance": [
+    {
+      "id": 16,
+      "name": "Principles of Corporate Finance",
+      "isbn": "1260565556",
+      "img": "http://books.google.com/books/content?id=0280wAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    }
+  ]
+}

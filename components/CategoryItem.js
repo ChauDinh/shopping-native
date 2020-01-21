@@ -2,12 +2,15 @@ import React from "react";
 import { Image, Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function Categories(props) {
-  const { category, onPress } = props;
+  const { category, onPress, img } = props;
   return (
     <TouchableOpacity activeOpacity={0.5} onPress={onPress}>
       <View style={styles.container}>
         <Text style={styles.title}>{category.name}</Text>
-        <Image source={category.img} style={styles.categoryImage}></Image>
+        <Image
+          source={{ uri: `${category.img}` }}
+          style={styles.categoryImage}
+        ></Image>
       </View>
     </TouchableOpacity>
   );

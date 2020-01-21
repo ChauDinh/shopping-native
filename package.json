@@ -6,7 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "react-devtools": "react-devtools"
+    "react-devtools": "react-devtools",
+    "mock-database": "json-server ./database/db.json"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.6",
@@ -24,7 +25,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "axios": "^0.19.1",
     "babel-preset-expo": "~8.0.0",
+    "json-server": "^0.15.1",
     "react-devtools": "^3.6.3"
   },
   "private": true
