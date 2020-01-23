@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     padding: 16,
-    borderRadius: 5,
+    borderRadius: 15,
     backgroundColor: "#fff",
     shadowColor: "#000",
     shadowOpacity: 0.1,

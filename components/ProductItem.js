@@ -1,25 +1,26 @@
 import React from "react";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-import formatImgPath from "../utils/formatImgPath";
+import { CartContext } from "../context/Cart";
 
 export default function ProductItem(props) {
-  const { product, onAddToCart } = props;
+  const { product } = props;
 
   return (
     <View style={styles.shadow}>
       <View style={styles.container}>
-        <Image
-          style={styles.img}
-          source={{ uri: formatImgPath(product.isbn) }}
-        />
+        <Image style={styles.img} source={{ uri: `${product.img}` }} />
         <View style={styles.info}>
-          <Text style={styles.name}>{product.isbn}</Text>
+          <Text style={styles.name}>{product.name}</Text>
           <View style={styles.priceRow}>
             <Text style={styles.price}>500K</Text>
-            <TouchableOpacity onPress={onAddToCart}>
-              <Text style={styles.buyButton}>BUY +</Text>
-            </TouchableOpacity>
+            <CartContext.Consumer>
+              {({ onAddToCart }) => (
+                <TouchableOpacity onPress={() => onAddToCart(product.name)}>
+                  <Text style={styles.buyButton}>BUY +</Text>
+                </TouchableOpacity>
+              )}
+            </CartContext.Consumer>
           </View>
         </View>
       </View>
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
   },
   container: {
     marginBottom: 20,
-    borderRadius: 4,
+    borderRadius: 10,
     backgroundColor: "#fff",
     overflow: "hidden"
   },
