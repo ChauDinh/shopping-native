@@ -6,7 +6,7 @@ import axios from "axios";
 import AppNavigator from "./utils/AppNavigator";
 import { CartProvider } from "./context/Cart";
 
-axios.defaults.baseURL = "https://6d993b9a.ngrok.io";
+axios.defaults.baseURL = "https://d545e661.ngrok.io";
 
 const AppContainer = createAppContainer(AppNavigator);
 

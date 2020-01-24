@@ -16,7 +16,15 @@ export default function ProductItem(props) {
             <Text style={styles.price}>500K</Text>
             <CartContext.Consumer>
               {({ onAddToCart }) => (
-                <TouchableOpacity onPress={() => onAddToCart(product.name)}>
+                <TouchableOpacity
+                  onPress={() =>
+                    onAddToCart({
+                      id: product.id,
+                      name: product.name,
+                      img: product.img
+                    })
+                  }
+                >
                   <Text style={styles.buyButton}>BUY +</Text>
                 </TouchableOpacity>
               )}

@@ -8,6 +8,9 @@ export class CartProvider extends React.Component {
 
     this.state = {
       cartItems: []
+      /**
+       * cartItems: item {name: , quality:}
+       */
     };
 
     this.onAddToCart = this.onAddToCart.bind(this);
@@ -18,6 +21,17 @@ export class CartProvider extends React.Component {
     this.setState({
       cartItems: this.state.cartItems.concat(product)
     });
+  }
+
+  onRemoveFromCart(product) {
+    console.log("removing to cart", product);
+    this.setState({
+      cartItems: this.state.cartItems.filter(item => item.name !== product.name)
+    });
+  }
+
+  onGetToTal() {
+    return this.state.cartItems.reduce((a, b) => a.price + b.price);
   }
 
   render() {
